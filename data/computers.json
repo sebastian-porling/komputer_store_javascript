@@ -2,7 +2,7 @@
     "computers": [
         {
             "id": 0,
-            "image": "../images/macbook.jpg",
+            "image": "./images/macbook.jpg",
             "title": "MacBook Pro",
             "description": "MacBook Pro elevates the notebook to a whole new level of performance and portability. Wherever your ideas take you, you’ll get there faster than ever with high‑performance processors and memory, advanced graphics, blazing‑fast storage, and more — all in a compact 3-pound package.",
             "features": [
