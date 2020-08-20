@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputer Store</title>
+
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="jumbotron card card-image">
+        <div class="text-white text-center py-5 px-4">
+            <div>
+              <h2 class="card-title sticky-top h1-responsive pt-3 mb-5 font-bold"><strong>Komputer Store</strong></h2>
+              <p class="mx-5 mb-5">
+                  Welcome! This is Sebastian Porlings solution for the Komputer Store task!
+              </p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav blue-gradient justify-content-center z-depth-1 py-2 nav-pills sticky-top">
+        <div class="nav-item">
+            <a class="nav-link white-text active" href="#">Top</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link white-text" href="#bank">Bank</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link white-text" href="#work">Work</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link white-text" href="#store">Store</a>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="error-modal-title"
+    aria-hidden="true">
+
+    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="error-modal-title">Bad Request!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body" id="error-modal-body">
+        
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <main>
+
+        <article data-spy="scroll" data-target="#bank" id="bank" class="aqua-gradient p-5"">
+            <div class="container card">
+                <h1>Bank account</h1>
+                <hr>
+                <div class="card-body">
+                    <div id="bank-account">
+
+                    </div>
+
+                    
+                    <button class="btn btn-primary" id="get-loan-btn">Get a Loan!</button>
+                </div>
+            </div>
+        </article>
+
+        <article data-spy="scroll" data-target="#work" id="work" class="peach-gradient p-5"">
+            <div class="container card">
+                <h1>Work account</h1>
+                <hr>
+                <div class="card-body">
+                    <div id="work-account">
+                        
+                    </div>
+                    <button class="btn btn-primary" id="transfer-btn">Transfer to Bank!</button>
+                    <button class="btn btn-primary" id="work-btn">Work!</button>
+                </div>
+            </div>
+        </article>
+
+        <article data-spy="scroll" data-target="#store" id="store" class="purple-gradient p-5">
+            <div class="container card">
+                <h1>Komputers</h1>
+                <hr>
+                <select class="browser-default custom-select" id="pc-select">
+
+                </select>
+                <div class="card-body d-flex justify-content-center" id="displayed-pc">
+                    <img class="pc-img align-self-center" src="./images/macbook.jpg" alt="">
+                    <div class="pc-info">
+                        <h2 id="pc-title">Microsoft Surface Laptop 3</h2>
+                        <p id="pc-description">With all that heat from all these directions, Microsoft has done an admirable job with the 13.5-inch Surface Laptop 3. It nails almost everything you want in a mainstream, portable laptop. It's thin and light, has a fantastic trackpad and keyboard combo and, thanks to a processor upgrade, offers an notable power boost over 2018's Surface Laptop 2.</p>
+                        <ul id="pc-features">
+                            <li class="feature">13.5-inch 2,256x1,504 (201 ppi, 3:2 aspect ratio) pen and touch display</li>
+                            <li class="feature">1.2GHz Intel Core i5-1035G7</li>
+                            <li class="feature">128MB dedicated Iris Plus Graphics (64CU)</li>
+                        </ul>
+                        <div class="pc-price-buy d-flex justify-content-end">
+                            <h3 id="pc-price align-self-center">500 kr</h3>
+                            <button class="btn btn-success align-self-center" id="buy-btn">Buy Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- Main javascript -->
+<script src="./js/fetch.js"></script>
+<script src="./js/account.js"></script>
+<script src="./js/work.js"></script>
+<script src="./js/render.js"></script>
+<script src="./js/startup.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
