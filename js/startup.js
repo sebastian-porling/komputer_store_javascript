@@ -1,6 +1,5 @@
 let account, work, computers;
 $(document).ready(() => {
-
     /**
      * Fetches the bank information and generates the view
      */
@@ -25,5 +24,26 @@ $(document).ready(() => {
         this.computers = data.computers;
         generateComputer(this.computers[0]);
         generateSelectList(this.computers);
-    })
+    });
+
+    /**
+     * Setup scrollspy and scroll animation
+     */
+    $("body").scrollspy({ target: "#nav", offset: 20 });
+    $("#nav a").on("click", function (event) {
+        if (this.hash !== undefined) {
+            this.hash = this.hash === "" ? "#top" : this.hash;
+            event.preventDefault();
+            let hash = this.hash;
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+                    window.location.hash = hash;
+                }
+            );
+        }
+    });
 });
