@@ -25,7 +25,8 @@ const getWork = async () => {
  * @param  url 
  */
 const fetchData = async (url) => {
-    const baseurl = await window.location.origin+window.location.pathname;
+    console.log(window.location.pathname)
+    const baseurl = await window.location.origin + window.location.pathname;
     const data = await fetch(baseurl + url);
     const json_data = await data.json();
     return json_data;
