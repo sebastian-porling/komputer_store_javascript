@@ -14,7 +14,7 @@
         },
         {
             "id": 1,
-            "image": "../images/azer.webp",
+            "image": "./images/azer.webp",
             "title": "Acer Aspire 3",
             "description": "The Acer Aspire 3 Laptop is ideal for those who love browsing the web, watching videos on their device and studying either at your desk at work, home or even on the go. The display helps to prevent eye-strain thanks to BlueLightShield technology and a built-in digital webcam and microphone makes it easy to stay connected online.",
             "features": [
@@ -26,7 +26,7 @@
         },
         {
             "id": 2,
-            "image": "../images/surface.webp",
+            "image": "./images/surface.webp",
             "title": "Microsoft Surface Laptop 3",
             "description": "With all that heat from all these directions, Microsoft has done an admirable job with the 13.5-inch Surface Laptop 3. It nails almost everything you want in a mainstream, portable laptop. It's thin and light, has a fantastic trackpad and keyboard combo and, thanks to a processor upgrade, offers an notable power boost over 2018's Surface Laptop 2.",
             "features": [
@@ -38,7 +38,7 @@
         },
         {
             "id": 3,
-            "image": "../images/hp.webp",
+            "image": "./images/hp.webp",
             "title": "HP Notebook 15-dw0019no",
             "description": "",
             "features": [
