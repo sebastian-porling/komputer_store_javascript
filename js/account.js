@@ -1,3 +1,6 @@
+/**
+ * Class that represents a bank account
+ */
 class Account {
     constructor(owner, bank, balance) {
         this._owner = owner;
@@ -8,7 +11,7 @@ class Account {
 
     /**
      * Adds money to the account
-     * @param amount 
+     * @param amount
      */
     deposit(amount) {
         if (amount > 0) {
@@ -18,7 +21,7 @@ class Account {
 
     /**
      * Withdraws money from the account
-     * @param  amount 
+     * @param  amount
      */
     withraw(amount) {
         if (amount > 0) {
@@ -28,7 +31,7 @@ class Account {
 
     /**
      * Makes a loan if the owner doesn't have a loan
-     * @param  amount 
+     * @param  amount
      */
     makeLoan(amount) {
         if (this._loan === false) {
@@ -44,11 +47,19 @@ class Account {
         this._loan = false;
     }
 
-    get owner() { return this._owner; }
+    get owner() {
+        return this._owner;
+    }
 
-    get bank() { return this._bank; }
+    get bank() {
+        return this._bank;
+    }
 
-    get balance() { return this._balance; }
+    get balance() {
+        return this._balance;
+    }
 
-    get loan() { return this._loan }
+    get loan() {
+        return this._loan;
+    }
 }

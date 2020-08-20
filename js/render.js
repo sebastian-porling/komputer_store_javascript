@@ -1,6 +1,6 @@
 
 /**
- * 
+ * Displays a computer for the user
  * @param computer 
  */
 const generateComputer = (computer) => {
@@ -18,12 +18,11 @@ const generateComputer = (computer) => {
         </div>
     </div>`;
     $('#displayed-pc').html(computerView);
-    handleBuyEvent();
 }
 
 /**
- * 
- * @param  computers 
+ * Updates the select element with the computers available
+ * @param computers 
  */
 const generateSelectList = (computers) => {
     computers.forEach(computer => {
@@ -32,7 +31,7 @@ const generateSelectList = (computers) => {
 }
 
 /**
- * 
+ * Updates the work information in the DOM
  * @param work 
  */
 const generateWork = (work) => {
@@ -43,7 +42,7 @@ const generateWork = (work) => {
 }
 
 /**
- * 
+ * Updates the bank account information in the DOM
  * @param account 
  */
 const generateAccount = (account) => {
@@ -55,7 +54,7 @@ const generateAccount = (account) => {
 }
 
 /**
- * 
+ * Generates a modal for handling a loan request and displays it
  */
 const generateLoanModal = () => {
     $('#error-modal-body').html(`
@@ -70,32 +69,23 @@ const generateLoanModal = () => {
 }
 
 /**
- * 
+ * Generates a modal with title and text and displays it to the page
  * @param title 
  * @param text 
  */
 const generateErrorModal = (title = "Error", text = "An error has occurred!") => {
-    $('#error-modal-body').html(text);
-    $('#error-modal-title').text(title);
-    $('#error-modal').modal('show');
+    generateModal(title, text);
 }
 
 /**
- * Registers the buy event
- * Which either let's the user know they don't have enough balance on their
- * bank account, or updates the balance after the purchase.
+ * Generates a modal with title and text and displays it to the page
+ * @param title 
+ * @param text 
  */
-const handleBuyEvent = () => {
-    $('#buy-btn').off();
-    $('#buy-btn').click(() => {
-        if (parseInt($('#balance').text()) < parseInt($('#price').text())){
-            let text = `You don't have enough money on your account! Work or take a loan!`;
-            let title = `Bad request!`;
-            generateErrorModal(title, text);
-        } else {
-            buy();
-        }
-    });
+const generateModal = (title = "", text = "") => {
+    $('#error-modal-body').html(text);
+    $('#error-modal-title').text(title);
+    $('#error-modal').modal('show');
 }
 
 /**

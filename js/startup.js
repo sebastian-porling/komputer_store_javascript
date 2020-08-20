@@ -1,5 +1,6 @@
 let account, work, computers;
 $(document).ready(() => {
+
     /**
      * Fetches the bank information and generates the view
      */
@@ -25,5 +26,4 @@ $(document).ready(() => {
         generateComputer(this.computers[0]);
         generateSelectList(this.computers);
     })
-
 });

@@ -1,4 +1,3 @@
-
 /**
  * Work account
  */
@@ -25,7 +24,17 @@ class Work {
         return transfer;
     }
 
-    get employee() { return this._employee; }
+    /**
+     * Returns the employee name as string
+     */
+    get employee() {
+        return this._employee;
+    }
 
-    get totalSalary() { return this._totalSalary; }
+    /**
+     * Returns the total salary as integer
+     */
+    get totalSalary() {
+        return this._totalSalary;
+    }
 }

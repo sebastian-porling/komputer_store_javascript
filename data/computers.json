@@ -18,8 +18,10 @@
             "title": "Acer Aspire 3",
             "description": "The Acer Aspire 3 Laptop is ideal for those who love browsing the web, watching videos on their device and studying either at your desk at work, home or even on the go. The display helps to prevent eye-strain thanks to BlueLightShield technology and a built-in digital webcam and microphone makes it easy to stay connected online.",
             "features": [
-                { "feature": "15.6, LCD display with a resolution of 1366 x 768." },
-                { "feature": "1 TB of storage"  },
+                {
+                    "feature": "15.6, LCD display with a resolution of 1366 x 768."
+                },
+                { "feature": "1 TB of storage" },
                 { "feature": "12 month warranty" }
             ],
             "price": 2000
@@ -30,7 +32,9 @@
             "title": "Microsoft Surface Laptop 3",
             "description": "With all that heat from all these directions, Microsoft has done an admirable job with the 13.5-inch Surface Laptop 3. It nails almost everything you want in a mainstream, portable laptop. It's thin and light, has a fantastic trackpad and keyboard combo and, thanks to a processor upgrade, offers an notable power boost over 2018's Surface Laptop 2.",
             "features": [
-                { "feature": "13.5-inch 2,256x1,504 (201 ppi, 3:2 aspect ratio) pen and touch display" },
+                {
+                    "feature": "13.5-inch 2,256x1,504 (201 ppi, 3:2 aspect ratio) pen and touch display"
+                },
                 { "feature": "1.2GHz Intel Core i5-1035G7" },
                 { "feature": "128MB dedicated Iris Plus Graphics (64CU)" }
             ],
@@ -42,12 +46,13 @@
             "title": "HP Notebook 15-dw0019no",
             "description": "",
             "features": [
-                { "feature": "15.6 WLED-backlit display with a ultra-slim bezel" },
+                {
+                    "feature": "15.6 WLED-backlit display with a ultra-slim bezel"
+                },
                 { "feature": "AMD Athlon Silver processor" },
                 { "feature": "7.15 hours on a single charge" }
             ],
             "price": 5000
         }
-        
     ]
 }

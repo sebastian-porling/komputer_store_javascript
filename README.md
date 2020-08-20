@@ -4,7 +4,8 @@ This solution is made by Sebastian Porling.
 
 ## Display
 
-You can visit [porling.me/komputer_store_javascript/](http://porling.me/komputer_store_javascript/) to see the solution!
+You can visit [porling.me/komputer_store_javascript/](http://porling.me/komputer_store_javascript/)
+ to see the solution!
 
 ## Motivation
 
